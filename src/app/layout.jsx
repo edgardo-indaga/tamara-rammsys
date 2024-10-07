@@ -1,42 +1,4 @@
-import localFont from "next/font/local";
 import "./globals.css";
-
-const degularSans = localFont({
-    src: [
-        {
-            path: '../public/fonts/Degular-Thin.woff2',
-            weight: '200',
-            style: 'normal'
-        },
-        {
-            path: '../public/fonts/Degular-Light.woff2',
-            weight: '300',
-            style: 'normal'
-        },
-        {
-            path: '../public/fonts/Degular-Regular.woff2',
-            weight: '400',
-            style: 'normal'
-        },
-        {
-            path: '../public/fonts/Degular-Semibold.woff2',
-            weight: '600',
-            style: 'normal'
-        },
-        {
-            path: '../public/fonts/Degular-Bold.woff2',
-            weight: '700',
-            style: 'normal'
-        },
-        {
-            path: '../public/fonts/Degular-Black.woff2',
-            weight: '800',
-            style: 'normal'
-        }
-    ],
-    display: 'swap',
-    variable: '--font-degular-sans'
-});
 
 export const metadata = {
     title: "Tamara Rammsy - Concejala",
@@ -55,9 +17,9 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="es">
-        <body className={`${degularSans.variable} font-sans antialiased`}>
-            {children}
-        </body>
+            <body>
+                {children}
+            </body>
         </html>
     );
 }
