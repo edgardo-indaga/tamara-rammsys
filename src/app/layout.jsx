@@ -4,32 +4,32 @@ import "./globals.css";
 const degularSans = localFont({
     src: [
         {
-            path: '/fonts/Degular-Thin.woff',
+            path: '../public/fonts/Degular-Thin.woff2',
             weight: '200',
             style: 'normal'
         },
         {
-            path: '/fonts/Degular-Light.woff',
+            path: '../public/fonts/Degular-Light.woff2',
             weight: '300',
             style: 'normal'
         },
         {
-            path: '/fonts/Degular-Regular.woff',
+            path: '../public/fonts/Degular-Regular.woff2',
             weight: '400',
             style: 'normal'
         },
         {
-            path: '/fonts/Degular-Semibold.woff',
+            path: '../public/fonts/Degular-Semibold.woff2',
             weight: '600',
             style: 'normal'
         },
         {
-            path: '/fonts/Degular-Bold.woff',
+            path: '../public/fonts/Degular-Bold.woff2',
             weight: '700',
             style: 'normal'
         },
         {
-            path: '/fonts/Degular-Black.woff',
+            path: '../public/fonts/Degular-Black.woff2',
             weight: '800',
             style: 'normal'
         }
@@ -54,9 +54,9 @@ export const metadata = {
 
 export default function RootLayout({children}) {
     return (
-        <html lang="en">
-        <body className={`${degularSans.variable} antialiased`}>
-        {children}
+        <html lang="es">
+        <body className={`${degularSans.variable} font-sans antialiased`}>
+            {children}
         </body>
         </html>
     );
