@@ -1,37 +1,49 @@
-import {Header} from "@/app/components/Header/Header";
-import Image from "next/image";
+import { Header } from '@/app/components/Header/Header';
+import Image from 'next/image';
 
 export default function Home() {
-    const Instagram = '/instagram.svg';
-    const Facebook = '/facebook.svg';
+    const Instagram = '/instagram-wh.svg';
+    const Facebook = '/facebook-wh.svg';
 
     return (
         <>
-            <Header/>
-            <div className="container mx-auto bg-[#ffffff] md:h-[700px] flex flex-col">
-                <div className="flex flex-col items-center justify-center md:h-[550px] h-[250px]">
-                    <p className="text-[18px] px-[5px] md:text-[60px] md:leading-[70px] text-[#5F6060] font-semibold font-degular-sans">“Creo en un Puerto Varas innovador,</p>
-                    <p className="text-[18px] px-[5px] md:text-[60px] md:leading-[70px] text-[#5F6060] font-semibold font-degular-sans">pionero, que avanza cada vez más en </p>
-                    <p className="text-[18px] px-[5px] md:text-[60px] md:leading-[70px] text-[#5F6060] font-semibold font-degular-sans">justicia social, poniendo en el centro el</p>
-                    <p className="text-[18px] px-[5px] md:text-[60px] md:leading-[70px] text-[#5F6060] font-semibold font-degular-sans">bienestar de las personas y su entorno”</p>
-                </div>
-                <div className="flex flex-col px-[10px] h-[100px]">
-                    <p className="font-degular-sans flex text-[16px] md:text-[30px] font-semibold mb-[5px]">
-                        Instagram:
-                        <Image src={Instagram} alt={'Logo'} width={25} height={25} className="ml-[10px]"/>
-                        <a href="https://www.instagram.com/tamara.rammsys" className="text-[#DE29BD] ml-[10px]" target="_blank">@tamara.rammsys</a>
-                    </p>
-                    <p className="font-degular-sans flex text-[16px] md:text-[30px] font-semibold">
-                        Facebook:
-                        <Image src={Facebook} alt={'Logo'} width={25} height={25} className="ml-[10px]"/>
-                        <a href="https://www.facebook.com/share/tDdwHq6DM2casLWc/" className="text-[#DE29BD] ml-[10px]" target="_blank">Tamara Rammsy Sánchez</a>
-                    </p>
-                </div>
-            </div>
-            <div className="bg-[#DE29BD] md:h-[200px]">
+            <Header />
+
+            <div className="flex h-[140px] flex-col items-center justify-center bg-[#DE29BD] md:h-[200px]">
                 <div className="container mx-auto flex justify-center">
-                    <h1 className="text-[#ffffff] text-[50px] md:text-[120px] font-degular-sans font-semibold">VOTA U-281</h1>
+                    <h1 className="font-degular-sans text-[50px] font-semibold text-[#ffffff] md:text-[120px] md:leading-[120px]">
+                        VOTA U-281
+                    </h1>
+                </div>
+                <div className="container mx-auto flex justify-center">
+                    <a
+                        href="https://www.facebook.com/share/tDdwHq6DM2casLWc/"
+                        target={'_blank'}
+                        className="mx-[5px] mt-[15px]"
+                    >
+                        <Image
+                            src={Facebook}
+                            alt={'Facebook'}
+                            width={34}
+                            height={34}
+                            className="w-[30px] md:w-[34px]"
+                        />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/tamara.rammsys"
+                        target={'_blank'}
+                        className="mx-[5px] mt-[15px]"
+                    >
+                        <Image
+                            src={Instagram}
+                            alt={'Instagram'}
+                            width={34}
+                            height={34}
+                            className="w-[30px] md:w-[34px]"
+                        />
+                    </a>
                 </div>
             </div>
-        </>);
+        </>
+    );
 }

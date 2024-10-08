@@ -8,8 +8,7 @@ export const metadata = {
         icon: '/favicon.svg',
         apple: '/favicon.png',
         other: {
-            rel: 'apple-touch-icon-precomposed',
-            url: '/favicon.png',
+            rel: 'apple-touch-icon-precomposed', url: '/favicon.png',
         },
     },
 };
@@ -17,9 +16,8 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="es">
-            <body>
-                {children}
-            </body>
+        <body>{children}
+        </body>
         </html>
     );
 }
